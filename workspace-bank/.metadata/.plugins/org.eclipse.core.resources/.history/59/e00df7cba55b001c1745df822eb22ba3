@@ -1,0 +1,47 @@
+package data;
+
+import java.util.HashMap;
+
+import bus.Account;
+import bus.CheckingAccount;
+import bus.SavingAccount;
+
+public class SingletonBank {
+	private SingletonBank() {
+		
+	}
+	public static SingletonBank  getSingleInstance() {
+		
+	}
+	public HashMap<Integer, Account> getAccountHashMap() {
+		
+	}
+	public HashMap<Integer, CheckingAccount> getCheckingAccountHashMap() {
+		
+	}
+	public HashMap<Integer, SavingAccount> getSavingAccountHashMap() {
+		
+	}
+	public void add (Account object) {
+		
+	}
+	public void remove (Account object) {
+		
+	}
+	public void sort (NumberPredicate) {
+		
+	}
+	public void sortByAccountlNumber() {
+		
+	}
+	public void serialize (HashMap<key, value> map) throws IOException {
+		
+	}
+	public HashMap<key, value> deSerialize() throws IOException {
+		
+	}
+	public void search (Long accountNumber) {
+		
+	}
+
+}

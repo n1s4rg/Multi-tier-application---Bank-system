@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;NumberPredicate.java&apos; to &apos;FortisBank_Backend_Part2/src/bus&apos;&#x0D;&#x0A;- Original project: &apos;Bank&apos;&#x0D;&#x0A;- Destination element: &apos;FortisBank_Backend_Part2/src/bus&apos;&#x0D;&#x0A;- Original element: &apos;bus.NumberPredicate.java&apos;" description="Copy compilation unit" destination="=FortisBank_Backend_Part2/src&lt;bus" element1="/src&lt;bus{NumberPredicate.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1639352664876" units="1" version="1.0"/>
+</session>

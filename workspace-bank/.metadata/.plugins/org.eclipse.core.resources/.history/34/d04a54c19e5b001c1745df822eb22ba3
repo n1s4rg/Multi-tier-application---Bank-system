@@ -1,0 +1,7 @@
+package bus;
+
+import java.util.Comparator;
+
+public class NumberPredicate extends Comparator<Account> {
+
+}

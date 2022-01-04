@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="bus.IOperation"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="bus.Account"/>
+    <fullyQualifiedTypeName name="bus.CheckingAccount"/>
+    <fullyQualifiedTypeName name="bus.SavingAccount"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="bus.NumberPredicate"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="client.BankManager"/>
+    <fullyQualifiedTypeName name="bus.RaiseException"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+</qualifiedTypeNameHistroy>

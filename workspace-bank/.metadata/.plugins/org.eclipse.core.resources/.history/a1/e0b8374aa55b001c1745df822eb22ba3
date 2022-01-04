@@ -1,0 +1,43 @@
+package data;
+
+import java.util.HashMap;
+
+public class SingletonBank {
+	private SingletonBank() {
+		
+	}
+	public static SingletonBank  getSingleInstance() {
+		
+	}
+	public HashMap<Integer, Account> getAccountHashMap() {
+		
+	}
+	public HashMap<key, value> getCheckingAccountHashMap() {
+		
+	}
+	public HashMap<key, value> getSavingAccountHashMap() {
+		
+	}
+	public void add (Account object) {
+		
+	}
+	public void remove (Account object) {
+		
+	}
+	public void sort (NumberPredict) {
+		
+	}
+	public void sortByAccountlNumber() {
+		
+	}
+	public void serialize (HashMap<key, value> map) throws IOException {
+		
+	}
+	public HashMap<key, value> deSerialize() throws IOException {
+		
+	}
+	public void search (Long accountNumber) {
+		
+	}
+
+}

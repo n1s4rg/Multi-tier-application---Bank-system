@@ -1,0 +1,106 @@
+package bus;
+
+import java.util.Date;
+import java.util.List;
+
+import data.DataCollection;
+
+import java.io.Serializable;
+import java.sql.Connection;
+import java.util.Calendar;
+
+public class Transactions implements Serializable  {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private long transactionNum = 0;
+	private long from_account;
+	private long to_account;
+	private String description;
+	private Date transactionDate;
+	private EnumTransactionType transactionType;
+	private double amount;
+	
+	public Transactions() {
+		super();
+		this.transactionNum = Bank.uniqueCustomerIdNum();
+		this.description = "";
+		this.transactionDate = Calendar.getInstance().getTime();
+		this.transactionType = EnumTransactionType.UNDEFINED;
+		this.amount = 0.0;
+		this.from_account = 0;
+		this.to_account = 0;
+	}
+	
+	public Transactions(String description,
+			EnumTransactionType transactionType, double amount,long from_account,long to_account) {
+		super();
+		this.transactionNum = Bank.uniqueCustomerIdNum();
+		this.description = description;
+		this.transactionDate = Calendar.getInstance().getTime();
+		this.transactionType = transactionType;
+		this.amount = amount;
+	}
+	
+	public long getTransactionNum() {
+		return transactionNum;
+	}
+	public void setTransactionNum(long transactionNum) {
+		this.transactionNum = transactionNum;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public Date getTransactionDate() {
+		return transactionDate;
+	}
+	public void setTransactionDate(Date transactionDate) {
+		this.transactionDate = transactionDate;
+	}
+	public EnumTransactionType getTransactionType() {
+		return transactionType;
+	}
+	public void setTransactionType(EnumTransactionType transactionType) {
+		this.transactionType = transactionType;
+	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+	public long getFrom_account() {
+		return from_account;
+	}
+
+	public void setFrom_account(long from_account) {
+		this.from_account = from_account;
+	}
+
+	public long getTo_account() {
+		return to_account;
+	}
+
+	public void setTo_account(long to_account) {
+		this.to_account = to_account;
+	}
+
+	//public services
+	public static List<Transactions> getAllTransactions(long custId) throws InvalidInputException {
+		return DataCollection.getAllTransactions(custId);
+	}
+	
+	public static boolean withdraw(long accNum, Transactions t, double updatedAmount) {
+		return DataCollection.withdraw(accNum, t, updatedAmount);
+	}
+	
+	public static boolean deposit(Connection connection, long accNum, Transactions t, double deductAmt) throws InvalidInputException {
+		return DataCollection.deposit(accNum, t, deductAmt);
+	}
+	
+}

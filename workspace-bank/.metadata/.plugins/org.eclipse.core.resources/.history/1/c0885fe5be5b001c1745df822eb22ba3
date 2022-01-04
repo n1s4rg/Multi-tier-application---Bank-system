@@ -1,0 +1,25 @@
+package bus;
+
+public class Validator {
+	
+		
+		  public static boolean isInRange (String value) throws RaiseException {
+			  
+		  }
+		  public static boolean isDigit (String value) throws RaiseException {
+			  
+		  }
+		  public static boolean isChar (String value) throws RaiseException {
+			  
+		  }
+		  public static boolean isDouble (String value) throws RaiseException 
+		  { 
+			  try {  
+				    Double.parseDouble(str);  
+				    return true;
+				  } catch(NumberFormatException e){  
+				    return false;  
+				  } 
+		  }
+
+}

@@ -1,0 +1,31 @@
+package bus;
+
+public class Validator {
+	
+		
+		  public static boolean isInRange (long value) throws RaiseException 
+		  {
+			  if(value <0) {
+				  throw new RaiseException("Value can't be negative");
+			  }
+			  
+		  }
+		  public static boolean isDigit (String value) throws RaiseException 
+		  {
+			  
+		  }
+		  public static boolean isChar (String value) throws RaiseException {
+			  
+		  }
+		  public static boolean isDouble (String value) throws RaiseException  
+		  { 
+			  if (value == null) {
+			        return false;
+			    }
+			    
+	        double d = Double.parseDouble(value);
+			   
+		    return true;
+		  }
+
+}
